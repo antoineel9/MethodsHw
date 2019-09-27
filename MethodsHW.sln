@@ -1,0 +1,61 @@
+﻿using System;
+
+namespace MethodsHW
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            var prog = new Program();
+            prog.newName();
+
+            prog.newName2(4f, 7f);
+            prog.newName2(200f, 400f);
+
+            int returnedValue = prog.newName3();
+
+            Console.WriteLine(returnedValue);
+
+            
+
+        }
+
+        public  void newName ()
+
+        {
+
+            Console.WriteLine(" it works!");
+        }
+
+       public  void  newName2( float  param1f, float param2f)
+        {
+
+            var avgerage  = param1f / param2f;
+            Console.WriteLine(avgerage);
+
+        }
+
+        public int newName3()
+        {
+            Console.WriteLine(" it still  works");
+            return 7;
+        }
+         public void loopMethod(string [ ]  toloop)
+
+        {
+            foreach(string x in toloop)
+            {
+                if (x == "bigdog")
+                {
+                    Console.WriteLine("bigdog!");
+                }   
+                else if (x == "bigcat")
+                {
+                    Console.WriteLine("bigcat!");
+                }
+            }
+
+        }
+
+    }
+}       
